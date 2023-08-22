@@ -6,7 +6,7 @@
  * Return the abolute value of int
  */
 
-int _abs(int)
+int _abs(int n)
 {
 	if (n >= 0)
 	{
