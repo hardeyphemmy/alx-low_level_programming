@@ -2,15 +2,16 @@
 
 /**
  * main - Entry point
- * Return: Always 0 (success)
+ * Return: 0 (void)
  */
 
 int main(void)
 {
 	char c;
 	int d;
-
-	c = '0';
+	
+	c = 'a';
+	d = 0;
 	while
 		(d < 10)
 		{
@@ -18,11 +19,11 @@ int main(void)
 			d++;
 		}
 	while
-		(c <= 'f');
-	{
-		putchar(c);
-		c++;
-	}
+		(c <= 'f')
+		{
+			putchar(c);
+			c++;
+		}
 	putchar('\n');
 	return (0);
 }
