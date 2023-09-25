@@ -8,7 +8,6 @@
  */
 int is_digit(char *s)
 {
-	int *result_array;
 	while (*s)
 	{
 		if (*s < '0' || *s > '9')
@@ -58,7 +57,7 @@ int main(int argc, char *argv[])
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	len = len1 + len2;
-	int *result_array = malloc(sizeof(int) * (len + 1));
+	result_array = (int *)malloc(sizeof(int) * (len + 1));
 
 	if (!result_array)
 		return (1);
@@ -80,4 +79,8 @@ int main(int argc, char *argv[])
 	}
 	free(result_array);
 	return (0);
+}
+int _putchar(char c)
+{
+	return putchar(c);
 }
