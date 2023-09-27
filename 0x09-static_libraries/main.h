@@ -1,5 +1,7 @@
 #ifndef MAIM_H
 #define MAIM_H
+#include <stdio.h>
+#include <string.h>
 
 int _putchar(char c);
 int _islower(int c);
