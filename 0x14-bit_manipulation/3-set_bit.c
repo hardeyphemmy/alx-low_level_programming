@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * set_bit - gets bit on index
- * @n: decimal number
- * index: index of the bit
+ * set_bit - set the values of a bit at a given index to 1
+ * @n: pointer to an unsigned long integer wherebit will be set
+ * @index: index of the bit to set
  * Return: 1 or -1
  */
 int set_bit(unsigned long int *n, unsigned int index)
