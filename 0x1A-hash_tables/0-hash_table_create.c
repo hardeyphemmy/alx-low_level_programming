@@ -52,7 +52,7 @@ hash_table_t *hash_table_create(unsigned long int size)
  * @value: The corresponding value in char
  * Return: int success (1) or failure (NULL)
  */
-hash_table_set(hash_table_t *ht, const char *key, const char *value)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = hash(key, ht->size);
 	hash_node_t *new_node = (hash_node_t *)malloc(sizeof(hash_node_t));
