@@ -17,11 +17,6 @@ typedef struct hash_node_s
 	char *value;
 	struct hash_node_s *next;
 } hash_node_t;
-typedef struct hash_table_s
-{
-	unsigned long int size;
-	hash_node_t **array;
-} hash_table_t;
 /**
  * hash_table_create - Create a hash table
  * @size: The size of the array
