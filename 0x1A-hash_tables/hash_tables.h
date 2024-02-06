@@ -1,7 +1,7 @@
 #ifndef HASH_TABLES_H
 #define HASH_TABLES_H
 
-typedef struct hash_table_s
+typedef struct hash_table_s hash_table_t;
 hash_table_t *hash_table_create(unsigned long int size);
 hast_table_set(hash_table_t *ht, const char *key, const char *value);
 
