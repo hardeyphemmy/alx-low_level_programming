@@ -24,7 +24,7 @@ typedef struct hash_node_s
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t* new_table = (hash_table_t *)malloc(sizeof(hash_table_t));
+	hash_table_t *new_table = (hash_table_t *)malloc(sizeof(hash_table_t));
 
 	if (new_table == NULL)
 	{
@@ -49,7 +49,6 @@ hash_table_t *hash_table_create(unsigned long int size)
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int index = hash(key, ht->size);
 	hash_node_t *new_node = (hash_node_t *)malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
 	{
