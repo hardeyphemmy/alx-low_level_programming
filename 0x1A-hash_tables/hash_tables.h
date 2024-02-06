@@ -3,7 +3,7 @@
 
 typedef struct hash_table_s hash_table_t;
 hash_table_t *hash_table_create(unsigned long int size);
-hast_table_set(hash_table_t *ht, const char *key, const char *value);
+int hast_table_set(hash_table_t *ht, const char *key, const char *value);
 
 unsigned long int hash_djb2(const unsigned char *str);
 
