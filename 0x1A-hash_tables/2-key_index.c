@@ -1,8 +1,11 @@
 #include "hash_tables.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * Key_index - to generate key
- * @key: Key string
- * @size: The sizee of the array
+ * Key_index - Computes the index of a key in a hash table array
+ *
+ * @key: Key string to compute index
+ * @size: The size of the hash table array
  * Return: Index which keyvaluepair is stored
  */
 
