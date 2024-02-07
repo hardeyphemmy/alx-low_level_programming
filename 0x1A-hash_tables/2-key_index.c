@@ -1,4 +1,10 @@
 #include "hash_tables.h"
+/**
+ * Key_index - to generate key
+ * @key: Key string
+ * @size: The sizee of the array
+ * Return: Index which keyvaluepair is stored
+ */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
