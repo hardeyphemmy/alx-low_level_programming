@@ -13,8 +13,10 @@ void hash_table_delete(hash_table_t *ht)
 	{
 		return;
 	}
+
+	unsigned long int i;
 	/* Deallocate each node in the table */
-	for (unsigned long int i = 0; i < ht->size; i++)
+	for (i = 0; i < ht->size; i++)
 	{
 		hash_node_t *current = ht->array[i];
 
