@@ -9,12 +9,12 @@
  */
 void hash_table_delete(hash_table_t *ht)
 {
+	unsigned long int i;
+
 	if (ht == NULL)
 	{
 		return;
 	}
-
-	unsigned long int i;
 	/* Deallocate each node in the table */
 	for (i = 0; i < ht->size; i++)
 	{
